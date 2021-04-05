@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dest/style.min.css">
+
+    <link rel="stylesheet" href="./dest/font.css">
+    <title>TonDat Portfolio</title>
+</head>
+
+<body>
+    <div class="cursor-custom">
+
+    </div>
+    <!-- <div class="cursor-follow">
+
+    </div> -->
+    <div class="wrapper__homepage">
+        <nav class="navbar">
+            <div class="navbar__wrapper">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="">Home</a></li>
+                    <li class="nav__item"><a href="">My Blogs</a></li>
+                    <li class="nav__item"><a href="">My CV</a></li>
+                    <li class="nav__item"><a href="">My Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <header class="header__area">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="hamburger hover-this">
+                        <div class="hamburger__wrapper">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="section-wrapper">
+            <section class="hero">
+                <div id="particles-js"></div>
+                <div class="text_des ">
+                    <div class="container">
+                        <div class="text__myname"><span class="hover-this" id="create__myname">Hello, my name is</span>
+                        </div>
+                        <div class="text__myname"><span class="hover-this" id="create__myname">Ton Dat</span></div>
+                        <div class="text__myname"><span class="hover-this" id="create__myname">And I'm a</span>
+                            <span class="typing__myname hover-this"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div class="mouse__scroll">
+                        <div class="img">
+                            <img src="./img/computer-mouse.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="line__scroll">
+                        <div class="line">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="aboutme">
+                <div class="container">
+                    <div class="left-aboutme">
+                        <a class="hover-this"><span>ABOUT ME</span></a>
+                        <div class="img hover-this">
+                            <img src="./img/avatar.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="right-aboutme">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </div>
+
+    <script src="./dest/jsmain.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"></script>
+
+    <script>
+        $(window).ready(() => {
+
+            // TweenMax.staggerFrom(
+            //     $('.text__welcome'),
+            //     2,
+            //     { x: -250, opacity: 0, ease: "elastic.out(1,0.3)" },
+            //     0.5
+            // );
+            let link = document.querySelectorAll('.hover-this');
+            var cursor = document.querySelector(".cursor-custom");
+            // var cursorOuter = document.querySelector(".cursor-follow")
+
+
+
+            // const animateit = function (e) {
+            //     const span = this.querySelector('.hover-this span');
+            //     const { offsetX: x, offsetY: y } = e,
+            //         { offsetWidth: width, offsetHeight: height } = this,
+            //         move = 25,
+            //         xMove = x / width * (move * 2) - move,
+            //         yMove = y / height * (move * 2) - move;
+            //     $('.hover-this span').css({ 'transform': 'translate(' + xMove + ', ' + yMove + ')' });
+            //     // span.style.transform = `translate(${xMove}px,${yMove}px)`;
+            //     console.log(xMove + ' ' + yMove)
+            //     console.log()
+            //     if (e.type === 'mouseleave') {
+            //         $('.hover-this span').css({ 'transform': 'translate(0,0)' });
+            //     }
+            // };
+            // const editCursor = e => {
+            //     const { clientX: x, clientY: y } = e;
+            //     cursor.style.left = x + 'px';
+            //     cursor.style.top = y + 'px';
+
+            // }
+
+            // link.forEach(b => b.addEventListener('mousemove', animateit));
+            // link.forEach(b => b.addEventListener('mouseleave', animateit));
+
+            // window.addEventListener('mousemove', editCursor);
+
+
+            $(window).mousemove(e => {
+                x = e.pageX;
+                y = e.pageY;
+
+                cursor.style.left = x + 'px';
+                cursor.style.top = (y - scrollY) + 'px';
+                // cursorOuter.style.left = x + 'px';
+                // cursorOuter.style.top = (y - scrollY) + 'px';
+
+            });
+
+            var typed = new Typed('.typing__myname', {
+                strings: ["Website Dev", "Blogger", "Freelancer"],
+                smartBackspace: true,
+                typeSpeed: 60,
+                backSpeed: 30,
+                loop: true,
+                showCursor: false
+            });
+
+            let tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
+
+            tl.to("#create__myname", { y: '0%', duration: 0.5, stagger: 0.3, delay: 0 })
+                .to(".typing__myname", { y: '0%', duration: 0.5, stagger: 0.3, delay: 0 })
+
+                ;
+
+            let tl2 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.aboutme',
+                    start: 'top center',
+                    end: 'center center',
+                    markers: true,
+                    toggleActions: 'play play none none'
+
+                }
+            })
+
+            tl2.to(".left-aboutme a", { y: '-20%', duration: 0.5 })
+
+            $('.aboutme .left-aboutme .img').tilt({
+                maxTilt: 20,
+                perspective: 1200,
+                easing: "cubic-bezier(.03,.98,.52,.99)",
+                scale: 1,
+                speed: 1500,
+                transition: true,
+                reset: true,
+            });
+
+            link.forEach(item => {
+                item.addEventListener('mouseover', () => {
+                    cursor.classList.add('hover-link');
+                    // cursorOuter.classList.add('hover-link');
+                })
+                item.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('hover-link');
+                    // cursorOuter.classList.remove('hover-link');
+                })
+            })
+        });
+        new fullpage(".section-all", {
+            autoScrolling: true
+        })
+    </script>
+
+</body>
+
+</html>

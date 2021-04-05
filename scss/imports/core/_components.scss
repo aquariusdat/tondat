@@ -1,0 +1,66 @@
+// css components
+@keyframes animMouseScroll {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-100%);
+    }
+    50% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+        visibility: hidden;
+        transform: translateY(100%);
+    }
+}
+
+.cursor-custom {
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%) scale(0.5);
+    position: fixed;
+    z-index: 9999;
+
+    transition: 0.5s cubic-bezier(0.44, 0.15, 0, 1.54);
+    transition-property: transform;
+    pointer-events: none;
+    transform-origin: 100% 100%;
+    mix-blend-mode: difference;
+}
+// .cursor-follow {
+//     width: 40px;
+//     height: 40px;
+//     top: 0;
+//     left: 0;
+//     border-radius: 50%;
+//     // border: 0.15em solid red;
+//     background-color: #fff;
+//     border: 1px solid white;
+//     transform: translate(-50%, -50%);
+//     position: fixed;
+//     z-index: 9999;
+//     mix-blend-mode: difference;
+//     transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+//     transition-property: transform;
+//     pointer-events: none;
+//     transform-origin: 100% 100%;
+// }
+.hover-link {
+    transform: scale(2);
+}
+// .hover-this {
+//     span {
+//         transition: transform 0.1s linear;
+//     }
+//     transition: 0.4s ease;
+// }
+// .hover-this:hover ~ .cursor-custom {
+//     transform: scale(2);
+// }

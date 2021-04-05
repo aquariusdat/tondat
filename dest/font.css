@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "gotli";
+    src: url("/font/Gotham-Light.woff2") format("woff2"), url("/font/Gotham-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "gotboit";
+    src: url("/font/Gotham-BoldItalic.woff2") format("woff2"), url("/font/Gotham-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "gotbook";
+    src: url("/font/Gotham-Book.woff2") format("woff2"), url("/font/Gotham-Book.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "gotbold";
+    src: url("/font/Gotham-Bold.woff2") format("woff2"), url("/font/Gotham-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "gotliit";
+    src: url("/font/Gotham-LightItalic.woff2") format("woff2"), url("/font/Gotham-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "gotbookit";
+    src: url("/font/Gotham-BookItalic.woff2") format("woff2"), url("/font/Gotham-BookItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "gotme";
+    src: url("/font/Gotham-Medium.woff2") format("woff2"), url("/font/Gotham-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "gotmeit";
+    src: url("/font/Gotham-MediumItalic.woff2") format("woff2"), url("/font/Gotham-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: fallback;
+}
