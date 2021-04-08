@@ -15,7 +15,7 @@
 html,
 body {
     width: 100%;
-    max-width: $container-max-width;
+    // max-width: $container-max-width;
     scroll-behavior: smooth;
     position: relative;
     @include customscroll();
