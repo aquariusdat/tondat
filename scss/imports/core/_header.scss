@@ -18,8 +18,30 @@
             justify-content: flex-end;
             .hamburger {
                 width: 70px;
-
+                overflow: hidden;
                 cursor: pointer;
+                &.open {
+                    .hamburger__wrapper {
+                        span {
+                            height: 2px;
+
+                            background-color: white;
+                            margin: 5px 0;
+                            transition: 0.5s;
+                            &:nth-child(1) {
+                                width: 100%;
+                                transform: rotateZ(135deg) translate(8px, -10px);
+                            }
+                            &:nth-child(2) {
+                                transform: translateX(100%);
+                            }
+                            &:nth-child(3) {
+                                width: 100%;
+                                transform: rotateZ(45deg) translate(-8px, -10px);
+                            }
+                        }
+                    }
+                }
                 .hamburger__wrapper {
                     width: 100%;
                     height: 100%;

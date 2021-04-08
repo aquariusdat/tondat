@@ -22,11 +22,30 @@
         <nav class="navbar">
             <div class="navbar__wrapper">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="">Home</a></li>
-                    <li class="nav__item"><a href="">My Blogs</a></li>
-                    <li class="nav__item"><a href="">My CV</a></li>
-                    <li class="nav__item"><a href="">My Contact</a></li>
+                    <li class="nav__item hover-this"><a href="" class="nav__link">
+                            <p>Home</p>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li class="nav__item hover-this"><a href="" class="nav__link">
+                            <p>My Blogs</p>
+                            <p>My
+                                Blogs</p>
+                        </a></li>
+                    <li class="nav__item hover-this"><a href="" class="nav__link">
+                            <p>My CV</p>
+                            <p>My
+                                CV</p>
+                        </a></li>
+                    <li class="nav__item hover-this"><a href="" class="nav__link">
+                            <p>My Contact</p>
+                            <p>My
+                                Contact</p>
+                        </a></li>
                 </ul>
+                <div class="social-media">
+
+                </div>
             </div>
         </nav>
         <header class="header__area">
@@ -71,15 +90,43 @@
 
             <section class="aboutme">
                 <div class="container">
-                    <div class="left-aboutme">
-                        <a class="hover-this"><span>ABOUT ME</span></a>
-                        <div class="img hover-this">
-                            <img src="./img/avatar.jpg" alt="">
+                    <div class="about__wrapper">
+                        <div class="left-aboutme">
+                            <!-- <a class="hover-this"><span>ABOUT ME</span></a> -->
+                            <div class="img hover-this">
+                                <img src="./img/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="right-aboutme">
+                            <div class="right__wrapper">
+                                <h2 class="title">
+                                    <div class="line__wrapper">
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="title__wrapper">
+                                        <p>ABOUT <span>ME</span></p>
+                                    </div>
+                                </h2>
+                                <div class="desc">
+                                    <p>My real name is <span>Hua Ton Dat</span>. I am currently working at HPB as
+                                        <span>Website
+                                            Developer</span>. I love
+                                        to code with HTML CSS to make stunning UI and have good UX for website.
+                                    </p>
+                                </div>
+                                <div class="contactme__wrapper">
+                                    <a href="https://www.facebook.com/aquariusdat" target="_blank"
+                                        class="contactme hover-this">
+                                        <p>Contact
+                                            with
+                                            me</p>
+                                    </a>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                    <div class="right-aboutme">
 
-                    </div>
                 </div>
             </section>
         </div>
@@ -90,11 +137,13 @@
     <script src="./dest/jsmain.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"></script>
 
     <script>
         $(window).ready(() => {
-
+            document.querySelector('.hamburger').addEventListener('click', () => {
+                document.querySelector('.hamburger').classList.toggle("open");
+                document.querySelector('.navbar').classList.toggle("open");
+            })
             // TweenMax.staggerFrom(
             //     $('.text__welcome'),
             //     2,
@@ -173,7 +222,13 @@
                 }
             })
 
-            tl2.to(".left-aboutme a", { y: '-20%', duration: 0.5 })
+            tl2.from(".left-aboutme a", { y: '-20%', duration: 0.5 })
+                .from(".left-aboutme .img", { x: '-150%', duration: 0.5 }, "-= 0.5")
+                .from(".right-aboutme .right__wrapper .title .line__wrapper .line", { x: '-100%', duration: 0.7 }, "-= 0.3")
+                .from(".right-aboutme .right__wrapper .title .title__wrapper p", { y: '100%', duration: 0.5 })
+                .from(".right-aboutme .right__wrapper .desc p", { y: '100%', duration: 0.5 })
+                .from(".right-aboutme .right__wrapper .contactme", { x: '-120%', duration: 0.5, yoyo: true })
+
 
             $('.aboutme .left-aboutme .img').tilt({
                 maxTilt: 20,
@@ -196,9 +251,7 @@
                 })
             })
         });
-        new fullpage(".section-all", {
-            autoScrolling: true
-        })
+
     </script>
 
 </body>
