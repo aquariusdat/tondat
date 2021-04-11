@@ -6,7 +6,7 @@
 body {
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #000011;
     .wrapper__homepage {
         width: 100%;
         .section-wrapper {
@@ -19,7 +19,7 @@ body {
                     width: 100%;
                     height: 100%;
                     cursor: pointer;
-                    background: #000;
+                    background: #000011;
                 }
                 .scroll {
                     position: absolute;
@@ -80,7 +80,7 @@ body {
                             padding: 10px 0;
                             display: flex;
                             align-items: center;
-                            height: 80px;
+                            height: 95px;
                             .typing__myname {
                                 display: inline-block;
                                 transform: translateY(110%);
@@ -95,7 +95,7 @@ body {
                                 span {
                                     display: inline-block;
                                     transform: translateY(110%);
-                                    font-family: "gotmed";
+                                    font-family: "gotme";
                                     letter-spacing: 0.05em;
                                     font-size: 55px;
 
@@ -237,7 +237,7 @@ body {
                                             left: 0%;
                                             width: 100%;
                                             top: 50%;
-                                            height: 1px;
+                                            height: 2px;
                                             background-color: #fff;
                                         }
                                     }
@@ -321,6 +321,122 @@ body {
                                         }
                                     }
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .projects {
+                background-color: #0e0c28;
+                width: 100%;
+                height: 100vh;
+                padding: 40px 0;
+                .container {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .title {
+                        height: 100px;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        .line__wrapper {
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            overflow: hidden;
+                            .line {
+                                width: 120px;
+                                height: 2px;
+                                background-color: #fff;
+                            }
+                        }
+                        h2 {
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            margin-left: 24px;
+                            overflow: hidden;
+                            span {
+                                font-size: 35px;
+                                font-family: "gotme";
+
+                                color: $primary-cl;
+                                text-transform: uppercase;
+                            }
+                            p {
+                                font-size: 35px;
+                                font-family: "gotme";
+
+                                text-transform: uppercase;
+                                color: white;
+                            }
+                        }
+                    }
+                    .list__project {
+                        flex: 1;
+                        width: 100%;
+
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        column-gap: 30px;
+                        row-gap: 30px;
+                        .project {
+                            background-color: #fff;
+                            .face {
+                                color: white;
+                                &.project__face1 {
+                                }
+                                &.project__face2 {
+                                }
+                            }
+                        }
+                    }
+                    .showmore__wrapper {
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        padding: 10px;
+                        margin: -10px;
+                        .showmore {
+                            width: 200px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-decoration: none;
+                            color: white;
+                            font-family: "gotme";
+                            font-size: 18px;
+                            line-height: 25px;
+                            padding: 10px;
+                            border: 2px solid #ff4d54;
+                            outline: none;
+                            border-radius: 5px;
+                            margin: 30px 0 0 0;
+                            position: relative;
+                            overflow: hidden;
+                            transition: 0.4s ease-out;
+
+                            p {
+                                z-index: 2;
+                            }
+                            &:hover {
+                                color: white;
+                                &:after {
+                                    transform: translateX(0%);
+                                }
+                            }
+                            &:after {
+                                display: block;
+                                content: "";
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                transform: translateX(-100%);
+                                background-color: #ff4d54;
+                                transition: 0.4s ease-out;
                             }
                         }
                     }
@@ -427,7 +543,7 @@ body {
                     height: unset;
                     .container {
                         align-items: unset;
-                        padding: 80px 0;
+                        padding: 40px 0;
                         .about__wrapper {
                             flex-direction: column;
 
@@ -437,7 +553,9 @@ body {
                                 justify-content: center;
                                 align-items: center;
                                 .img {
-                                    width: 70%;
+                                    width: 55%;
+                                    display: flex;
+                                    justify-content: center;
                                 }
                             }
                             .right-aboutme {
@@ -458,15 +576,15 @@ body {
                                         .title__wrapper {
                                             p {
                                                 padding: 35px 0;
-                                                font-size: 45px;
-                                                line-height: 75px;
+                                                font-size: 30px;
+                                                line-height: 55px;
                                             }
                                         }
                                     }
                                     .desc {
                                         text-align: center;
                                         p {
-                                            font-size: 24px;
+                                            font-size: 18px;
                                         }
                                     }
                                     .contactme__wrapper {
@@ -474,9 +592,9 @@ body {
                                         justify-content: center;
                                         padding: 25px;
                                         .contactme {
-                                            width: 250px;
-                                            padding: 20px;
-                                            font-size: 20px;
+                                            width: 200px;
+                                            padding: 15px;
+                                            font-size: 18px;
                                         }
                                     }
                                 }

@@ -129,6 +129,68 @@
 
                 </div>
             </section>
+
+            <section class="projects">
+                <div class="container">
+                    <div class="title">
+                        <div class="line__wrapper">
+                            <div class="line"></div>
+                        </div>
+                        <h2>
+                            <p><span>My</span> Projects</p>
+                        </h2>
+                    </div>
+
+                    <div class="list__project">
+                        <div class="project hover-this">
+                            <div class="project__face1 face">
+                                FACE 1
+                            </div>
+                            <div class="project__face2 face">
+                                FACE 2
+                            </div>
+                        </div>
+                        <div class="project hover-this">
+                            <div class="project__face1 face">
+                                FACE 1
+                            </div>
+                            <div class="project__face2 face">
+                                FACE 2
+                            </div>
+                        </div>
+                        <div class="project hover-this">
+                            <div class="project__face1 face">
+                                FACE 1
+                            </div>
+                            <div class="project__face2 face">
+                                FACE 2
+                            </div>
+                        </div>
+                        <div class="project hover-this">
+                            <div class="project__face1 face">
+                                FACE 1
+                            </div>
+                            <div class="project__face2 face">
+                                FACE 2
+                            </div>
+                        </div>
+                        <div class="project hover-this">
+                            <div class="project__face1 face">
+                                FACE 1
+                            </div>
+                            <div class="project__face2 face">
+                                FACE 2
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showmore__wrapper">
+                        <a href="#" class="showmore hover-this">
+                            <p>Show more</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
 
 
@@ -211,10 +273,10 @@
 
                 ;
 
-            let tl2 = gsap.timeline({
+            let tlAboutme = gsap.timeline({
                 scrollTrigger: {
                     trigger: '.aboutme',
-                    start: 'top center',
+                    start: '-20% center',
                     end: 'center center',
                     markers: true,
                     toggleActions: 'play play none none'
@@ -222,13 +284,27 @@
                 }
             })
 
-            tl2.from(".left-aboutme a", { y: '-20%', duration: 0.5 })
+            tlAboutme.from(".left-aboutme a", { y: '-20%', duration: 0.5 })
                 .from(".left-aboutme .img", { x: '-150%', duration: 0.5 }, "-= 0.5")
                 .from(".right-aboutme .right__wrapper .title .line__wrapper .line", { x: '-100%', duration: 0.7 }, "-= 0.3")
                 .from(".right-aboutme .right__wrapper .title .title__wrapper p", { y: '100%', duration: 0.5 })
                 .from(".right-aboutme .right__wrapper .desc p", { y: '100%', duration: 0.5 })
-                .from(".right-aboutme .right__wrapper .contactme", { x: '-120%', duration: 0.5, yoyo: true })
+                .from(".right-aboutme .right__wrapper .contactme", { opacity: 0, scale: 0.5, duration: 0.3 })
 
+
+            let tlProject = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.projects',
+                    start: '-20% center',
+                    end: 'center center',
+                    markers: true,
+                    toggleActions: 'play play none none'
+
+                }
+            })
+
+            tlProject.from(".container .title .line__wrapper .line", { x: '-100%', duration: 0.5 })
+                .from(".container .title h2 p", { x: '-100%', duration: 0.5 })
 
             $('.aboutme .left-aboutme .img').tilt({
                 maxTilt: 20,

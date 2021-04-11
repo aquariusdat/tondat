@@ -103,7 +103,7 @@ particlesJS('particles-js',
         },
         "bubble": {
           "distance": 250,
-          "size": 15,
+          "size": 10,
           "duration": 2,
           "opacity": 8,
           "speed": 3
@@ -122,7 +122,7 @@ particlesJS('particles-js',
     "retina_detect": true,
     "config_demo": {
       "hide_card": false,
-      "background_color": "#1b1b1b",
+      "background_color": "#000011",
       "background_image": "",
       "background_position": "50% 50%",
       "background_repeat": "no-repeat",
