@@ -83,7 +83,7 @@ body {
                             height: 95px;
                             .typing__myname {
                                 display: inline-block;
-                                transform: translateY(110%);
+                                transform: translateY(150%);
                                 font-family: "gotbold";
 
                                 font-size: 55px;
@@ -94,7 +94,7 @@ body {
                             &:nth-child(1) {
                                 span {
                                     display: inline-block;
-                                    transform: translateY(110%);
+                                    transform: translateY(150%);
                                     font-family: "gotme";
                                     letter-spacing: 0.05em;
                                     font-size: 55px;
@@ -105,7 +105,7 @@ body {
                             &:nth-child(2) {
                                 span {
                                     display: inline-block;
-                                    transform: translateY(110%);
+                                    transform: translateY(150%);
                                     font-family: "gotbold";
 
                                     font-size: 95px;
@@ -118,7 +118,7 @@ body {
                                 span {
                                     display: inline-flex;
 
-                                    transform: translateY(110%);
+                                    transform: translateY(150%);
                                     font-family: "gotbold";
                                     letter-spacing: 0.05em;
                                     font-size: 55px;
@@ -513,6 +513,11 @@ body {
                     }
                 }
             }
+
+            .test {
+                width: 100vw;
+                height: 100vh;
+            }
         }
     }
 }
@@ -528,7 +533,7 @@ body {
                             .text__myname {
                                 .typing__myname {
                                     display: inline-block;
-                                    transform: translateY(100%);
+                                    transform: translateY(150%);
                                     font-family: "gotbold";
 
                                     font-size: 55px;
@@ -538,7 +543,7 @@ body {
                                 &:nth-child(1) {
                                     span {
                                         display: inline-block;
-                                        transform: translateY(100%);
+                                        transform: translateY(150%);
                                         font-family: "gotmed";
                                         letter-spacing: 0.05em;
                                         font-size: 55px;
@@ -549,7 +554,7 @@ body {
                                 &:nth-child(2) {
                                     span {
                                         display: inline-block;
-                                        transform: translateY(100%);
+                                        transform: translateY(150%);
                                         font-family: "gotbold";
 
                                         font-size: 95px;
@@ -562,7 +567,7 @@ body {
                                     span {
                                         display: inline-flex;
 
-                                        transform: translateY(100%);
+                                        transform: translateY(150%);
                                         font-family: "gotbold";
                                         letter-spacing: 0.05em;
                                         font-size: 55px;
@@ -690,20 +695,20 @@ body {
                                 height: 70px;
                                 .typing__myname {
                                     display: inline-block;
-                                    transform: translateY(100%);
+                                    transform: translateY(150%);
                                     font-family: "gotbold";
 
-                                    font-size: 40px;
+                                    font-size: 35px;
 
                                     color: white;
                                 }
                                 &:nth-child(1) {
                                     span {
                                         display: inline-block;
-                                        transform: translateY(100%);
+                                        transform: translateY(150%);
                                         font-family: "gotmed";
                                         letter-spacing: 0.05em;
-                                        font-size: 40px;
+                                        font-size: 35px;
 
                                         color: white;
                                     }
@@ -711,10 +716,10 @@ body {
                                 &:nth-child(2) {
                                     span {
                                         display: inline-block;
-                                        transform: translateY(100%);
+                                        transform: translateY(150%);
                                         font-family: "gotbold";
 
-                                        font-size: 65px;
+                                        font-size: 55px;
 
                                         color: white;
                                     }
@@ -724,10 +729,10 @@ body {
                                     span {
                                         display: inline-flex;
 
-                                        transform: translateY(100%);
+                                        transform: translateY(150%);
                                         font-family: "gotbold";
                                         letter-spacing: 0.05em;
-                                        font-size: 40px;
+                                        font-size: 35px;
 
                                         color: white;
                                     }
@@ -739,6 +744,15 @@ body {
                 .aboutme {
                     .container {
                         .about__wrapper {
+                        }
+                    }
+                }
+                .projects {
+                    .container {
+                        .list__project {
+                            grid-template-rows: repeat(1, 170px);
+                            column-gap: 20px;
+                            row-gap: 20px;
                         }
                     }
                 }
