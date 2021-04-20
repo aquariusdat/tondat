@@ -81,11 +81,12 @@ body {
                             display: flex;
                             align-items: center;
                             height: 95px;
+                            text-transform: uppercase;
+
                             .typing__myname {
                                 display: inline-block;
                                 transform: translateY(150%);
                                 font-family: "gotbold";
-
                                 font-size: 55px;
                                 line-height: 60px;
 
@@ -96,7 +97,7 @@ body {
                                     display: inline-block;
                                     transform: translateY(150%);
                                     font-family: "gotme";
-                                    letter-spacing: 0.05em;
+                                    letter-spacing: 0.01em;
                                     font-size: 55px;
 
                                     color: white;
@@ -120,7 +121,7 @@ body {
 
                                     transform: translateY(150%);
                                     font-family: "gotbold";
-                                    letter-spacing: 0.05em;
+                                    letter-spacing: 0.01em;
                                     font-size: 55px;
 
                                     color: white;
@@ -526,7 +527,7 @@ body {
                 }
             }
 
-            .myskils {
+            .career {
                 width: 100%;
                 height: 100vh;
                 .container {
@@ -560,7 +561,7 @@ body {
                                     span {
                                         display: inline-block;
                                         transform: translateY(150%);
-                                        font-family: "gotmed";
+                                        font-family: "gotme";
                                         letter-spacing: 0.05em;
                                         font-size: 55px;
 
@@ -722,7 +723,7 @@ body {
                                     span {
                                         display: inline-block;
                                         transform: translateY(150%);
-                                        font-family: "gotmed";
+                                        font-family: "gotme";
                                         letter-spacing: 0.05em;
                                         font-size: 35px;
 
@@ -736,8 +737,6 @@ body {
                                         font-family: "gotbold";
 
                                         font-size: 55px;
-
-                                        color: white;
                                     }
                                 }
                                 &:nth-child(3) {
