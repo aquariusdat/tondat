@@ -25,38 +25,83 @@
             flex-direction: column;
             margin-top: 70px;
             width: 100%;
+            align-items: center;
+            position: relative;
+
             .nav__item {
                 margin: 30px;
                 display: flex;
                 justify-content: center;
+                width: 25%;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 60%;
+                    left: 20%;
+                    transform: translate(-50%, -50%) rotate(270deg);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3.5em;
+                    color: #848484;
+
+                    border-radius: 50%;
+                    z-index: -1;
+                    opacity: 0;
+                    font-family: "gotbold";
+                    text-transform: uppercase;
+                    letter-spacing: 20px;
+                    transition: letter-spacing 0.5s;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 60%;
+                    right: 20%;
+                    transform: translate(50%, -50%) rotate(90deg);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3.5em;
+                    color: #848484;
+
+                    border-radius: 50%;
+                    z-index: -1;
+                    opacity: 0;
+                    font-family: "gotbold";
+                    text-transform: uppercase;
+                    letter-spacing: 30px;
+                    transition: letter-spacing 0.5s;
+                }
+                &:hover {
+                    &::before {
+                        content: attr(data-text);
+                        opacity: 1;
+                        letter-spacing: 10px;
+                    }
+                    &::after {
+                        content: attr(data-text);
+                        opacity: 1;
+                        letter-spacing: 10px;
+                    }
+                }
+
                 a {
                     text-decoration: none;
-
+                    width: 100%;
                     font-family: "gotme";
                     font-size: 25px;
                     color: #fff;
+                    z-index: 2;
                     overflow: hidden;
                     position: relative;
-                    width: 25%;
                     height: 50px;
                     display: flex;
                     align-items: center;
                     flex-direction: column;
 
                     justify-content: center;
-                    // &::after {
-                    //     display: block;
-                    //     content: "";
-                    //     position: absolute;
-                    //     bottom: 0;
-                    //     height: 0px;
-                    //     width: 100%;
-                    //     left: 0;
-                    //     opacity: 0.5;
-                    //     background-color: #fff;
-                    //     transform: translateX(-100%);
-                    //     transition: 0.4s ease-out;
-                    // }
+
                     &:hover {
                         &::after {
                             transform: translateX(0%);
@@ -160,8 +205,10 @@
                 .navbar__wrapper {
                     .nav__list {
                         .nav__item {
+                            width: 40%;
+
                             a {
-                                width: 40%;
+                                width: 100%;
                             }
                         }
                     }

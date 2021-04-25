@@ -922,18 +922,149 @@ body {
                         }
                     }
                 }
-                .aboutme {
-                    .container {
-                        .about__wrapper {
-                        }
-                    }
-                }
                 .projects {
                     .container {
                         .list__project {
-                            grid-template-rows: repeat(1, 170px);
-                            column-gap: 20px;
-                            row-gap: 20px;
+                            grid-template-columns: repeat(1, 1fr);
+                            grid-template-rows: repeat(3, 300px);
+                        }
+                        .title {
+                            flex-direction: column;
+                            h2 {
+                                margin: unset;
+                                p {
+                                    font-size: 30px;
+                                    span {
+                                        font-size: 30px;
+                                    }
+                                }
+                            }
+                            .line__wrapper {
+                                width: 10%;
+                                .line {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .career {
+                    .container {
+                        .title__career {
+                            flex-direction: column;
+                            flex-flow: column-reverse;
+                            h2 {
+                                margin: unset;
+                                p {
+                                    font-size: 30px;
+                                    span {
+                                        font-size: 30px;
+                                    }
+                                }
+                            }
+                            .line__wrapper {
+                                width: 10%;
+                                .line {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .career__wrapper {
+                            .career__item {
+                                .company {
+                                    width: 40%;
+                                    left: 0%;
+                                    transform: translate(0%, -50%);
+                                    .company__wrapper {
+                                        .logo__company {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include xs {
+    body {
+        .wrapper__homepage {
+            .section-wrapper {
+                .career {
+                    .container {
+                        .career__wrapper {
+                            .career__item {
+                                .company {
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    .company__wrapper {
+                                        .name {
+                                            font-size: 16px;
+                                        }
+                                        .desc {
+                                            p {
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .aboutme {
+                    .container {
+                        .about__wrapper {
+                            .right-aboutme {
+                                .right__wrapper {
+                                    .contactme__wrapper {
+                                        margin: unset;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    body {
+        .wrapper__homepage {
+            .section-wrapper {
+                .hero {
+                    .text_des {
+                        .container {
+                            .text__myname {
+                                height: 60px;
+                                &:nth-child(1) {
+                                    span {
+                                        letter-spacing: 0.01em;
+                                        font-size: 22px;
+                                    }
+                                }
+                                &:nth-child(2) {
+                                    span {
+                                        font-size: 35px;
+                                    }
+                                }
+                                &:nth-child(3) {
+                                    display: flex;
+                                    span {
+                                        letter-spacing: 0.01em;
+                                        font-size: 22px;
+                                    }
+                                    .typing__myname {
+                                        margin-left: 10px;
+                                        color: $primary-cl;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
