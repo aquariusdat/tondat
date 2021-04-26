@@ -85,7 +85,7 @@ body {
 
                             .typing__myname {
                                 display: inline-block;
-                                transform: translateY(150%);
+                                transform: translateY(0%);
                                 font-family: "gotbold";
                                 font-size: 55px;
                                 line-height: 60px;
@@ -95,7 +95,7 @@ body {
                             &:nth-child(1) {
                                 span {
                                     display: inline-block;
-                                    transform: translateY(150%);
+                                    transform: translateY(0%);
                                     font-family: "gotme";
                                     letter-spacing: 0.01em;
                                     font-size: 55px;
@@ -106,7 +106,7 @@ body {
                             &:nth-child(2) {
                                 span {
                                     display: inline-block;
-                                    transform: translateY(150%);
+                                    transform: translateY(0%);
                                     font-family: "gotbold";
 
                                     font-size: 95px;
@@ -119,7 +119,7 @@ body {
                                 span {
                                     display: inline-flex;
 
-                                    transform: translateY(150%);
+                                    transform: translateY(0%);
                                     font-family: "gotbold";
                                     letter-spacing: 0.01em;
                                     font-size: 55px;
@@ -189,7 +189,7 @@ body {
 
                         .left-aboutme {
                             width: 50%;
-                            height: 100%;
+                            // height: 100%;
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
@@ -716,7 +716,7 @@ body {
                             .text__myname {
                                 .typing__myname {
                                     display: inline-block;
-                                    transform: translateY(150%);
+                                    transform: translateY(0%);
                                     font-family: "gotbold";
 
                                     font-size: 55px;
@@ -726,7 +726,7 @@ body {
                                 &:nth-child(1) {
                                     span {
                                         display: inline-block;
-                                        transform: translateY(150%);
+                                        transform: translateY(0%);
                                         font-family: "gotme";
                                         letter-spacing: 0.05em;
                                         font-size: 55px;
@@ -737,7 +737,7 @@ body {
                                 &:nth-child(2) {
                                     span {
                                         display: inline-block;
-                                        transform: translateY(150%);
+                                        transform: translateY(0%);
                                         font-family: "gotbold";
 
                                         font-size: 95px;
@@ -750,7 +750,7 @@ body {
                                     span {
                                         display: inline-flex;
 
-                                        transform: translateY(150%);
+                                        transform: translateY(0%);
                                         font-family: "gotbold";
                                         letter-spacing: 0.05em;
                                         font-size: 55px;
@@ -878,7 +878,7 @@ body {
                                 height: 70px;
                                 .typing__myname {
                                     display: inline-block;
-                                    transform: translateY(150%);
+                                    transform: translateY(0%);
                                     font-family: "gotbold";
 
                                     font-size: 35px;
@@ -888,7 +888,7 @@ body {
                                 &:nth-child(1) {
                                     span {
                                         display: inline-block;
-                                        transform: translateY(150%);
+                                        transform: translateY(0%);
                                         font-family: "gotme";
                                         letter-spacing: 0.05em;
                                         font-size: 35px;
@@ -899,7 +899,7 @@ body {
                                 &:nth-child(2) {
                                     span {
                                         display: inline-block;
-                                        transform: translateY(150%);
+                                        transform: translateY(0%);
                                         font-family: "gotbold";
 
                                         font-size: 55px;
@@ -910,7 +910,7 @@ body {
                                     span {
                                         display: inline-flex;
 
-                                        transform: translateY(150%);
+                                        transform: translateY(0%);
                                         font-family: "gotbold";
                                         letter-spacing: 0.05em;
                                         font-size: 35px;

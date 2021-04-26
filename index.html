@@ -360,13 +360,24 @@
                 loop: true,
                 showCursor: true
             });
+            if (screen.width <= 768) {
+                let tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
 
-            let tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
+                tl.from("#create__myname", { x: '-150%', duration: 0.5, stagger: 0.3, delay: 0 })
+                    .from(".typing__myname", { x: '-150%', duration: 0.5, stagger: 0.3, delay: 0 })
 
-            tl.to("#create__myname", { y: '0%', duration: 0.5, stagger: 0.3, delay: 0 })
-                .to(".typing__myname", { y: '0%', duration: 0.5, stagger: 0.3, delay: 0 })
+                    ;
 
-                ;
+            }
+            else {
+                let tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
+
+                tl.from("#create__myname", { y: '150%', duration: 0.5, stagger: 0.3, delay: 0 })
+                    .from(".typing__myname", { y: '150%', duration: 0.5, stagger: 0.3, delay: 0 })
+
+                    ;
+
+            }
 
             let tlAboutme = gsap.timeline({
                 scrollTrigger: {
