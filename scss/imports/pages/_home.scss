@@ -86,7 +86,7 @@ body {
                             .typing__myname {
                                 display: inline-block;
                                 transform: translateY(0%);
-                                font-family: "gotbold";
+                                font-family: proxima-nova, sans-serif;
                                 font-size: 55px;
                                 line-height: 60px;
 
@@ -96,7 +96,7 @@ body {
                                 span {
                                     display: inline-block;
                                     transform: translateY(0%);
-                                    font-family: "gotme";
+                                    font-family: proxima-nova, sans-serif;
                                     letter-spacing: 0.01em;
                                     font-size: 55px;
 
@@ -107,11 +107,11 @@ body {
                                 span {
                                     display: inline-block;
                                     transform: translateY(0%);
-                                    font-family: "gotbold";
-
+                                    font-family: proxima-nova, sans-serif;
+                                    font-weight: bold;
                                     font-size: 95px;
 
-                                    color: white;
+                                    color: $primary-cl;
                                 }
                             }
                             &:nth-child(3) {
@@ -120,7 +120,7 @@ body {
                                     display: inline-flex;
 
                                     transform: translateY(0%);
-                                    font-family: "gotbold";
+                                    font-family: proxima-nova, sans-serif;
                                     letter-spacing: 0.01em;
                                     font-size: 55px;
 
@@ -163,7 +163,7 @@ body {
                             font-size: 35px;
                             line-height: 40px;
                             letter-spacing: 0.02em;
-                            font-family: "gotme";
+                            font-family: proxima-nova, sans-serif;
                             color: #fff;
                             text-shadow: rgba(255, 255, 255, 0.4) 3px 3px 0.05em;
                             z-index: 10;
@@ -200,7 +200,8 @@ body {
                                 z-index: 10;
 
                                 font-size: 55px;
-                                font-family: "gotbold";
+                                font-family: proxima-nova, sans-serif;
+                                font-weight: bold;
                                 background: #fff;
                                 mix-blend-mode: difference;
                             }
@@ -249,7 +250,8 @@ body {
                                         p {
                                             color: #ff4d54;
 
-                                            font-family: "gotbold";
+                                            font-family: proxima-nova, sans-serif;
+                                            font-weight: bold;
                                             font-size: 35px;
                                             line-height: 70px;
                                             padding: 20px 0;
@@ -291,7 +293,7 @@ body {
                                         align-items: center;
                                         text-decoration: none;
                                         color: white;
-                                        font-family: "gotme";
+                                        font-family: proxima-nova, sans-serif;
                                         font-size: 18px;
                                         line-height: 25px;
                                         padding: 10px;
@@ -302,7 +304,7 @@ body {
                                         position: relative;
                                         overflow: hidden;
                                         transition: 0.4s ease-out;
-
+                                        letter-spacing: 0.05em;
                                         p {
                                             z-index: 2;
                                         }
@@ -365,14 +367,16 @@ body {
                             overflow: hidden;
                             span {
                                 font-size: 35px;
-                                font-family: "gotme";
+                                font-family: proxima-nova, sans-serif;
+                                font-weight: bold;
 
                                 color: $primary-cl;
                                 text-transform: uppercase;
                             }
                             p {
                                 font-size: 35px;
-                                font-family: "gotme";
+                                font-family: proxima-nova, sans-serif;
+                                font-weight: bold;
 
                                 text-transform: uppercase;
                                 color: white;
@@ -492,7 +496,7 @@ body {
                             align-items: center;
                             text-decoration: none;
                             color: white;
-                            font-family: "gotme";
+                            font-family: proxima-nova, sans-serif;
                             font-size: 18px;
                             line-height: 25px;
                             padding: 10px;
@@ -503,7 +507,7 @@ body {
                             position: relative;
                             overflow: hidden;
                             transition: 0.4s ease-out;
-
+                            letter-spacing: 0.05em;
                             p {
                                 z-index: 2;
                             }
@@ -560,14 +564,16 @@ body {
                             overflow: hidden;
                             span {
                                 font-size: 35px;
-                                font-family: "gotme";
+                                font-family: proxima-nova, sans-serif;
+                                font-weight: bold;
 
                                 color: $primary-cl;
                                 text-transform: uppercase;
                             }
                             p {
                                 font-size: 35px;
-                                font-family: "gotme";
+                                font-family: proxima-nova, sans-serif;
+                                font-weight: bold;
 
                                 text-transform: uppercase;
                                 color: white;
@@ -634,7 +640,8 @@ body {
                                         text-align: center;
                                         font-size: 20px;
                                         color: white;
-                                        font-family: "gotbold";
+                                        font-family: proxima-nova, sans-serif;
+                                        font-weight: bold;
                                     }
                                     .desc {
                                         padding: 15px 0;
@@ -695,7 +702,7 @@ body {
 
                                     letter-spacing: 0.03em;
                                     font-size: 20px;
-                                    font-family: "gotme";
+                                    font-family: proxima-nova, sans-serif;
                                 }
                             }
                         }
@@ -718,7 +725,8 @@ body {
                                 .typing__myname {
                                     display: inline-block;
                                     transform: translateY(0%);
-                                    font-family: "gotbold";
+                                    font-family: proxima-nova, sans-serif;
+                                    font-weight: bold;
 
                                     font-size: 55px;
 
@@ -728,7 +736,7 @@ body {
                                     span {
                                         display: inline-block;
                                         transform: translateY(0%);
-                                        font-family: "gotme";
+                                        font-family: proxima-nova, sans-serif;
                                         letter-spacing: 0.05em;
                                         font-size: 55px;
 
@@ -739,7 +747,8 @@ body {
                                     span {
                                         display: inline-block;
                                         transform: translateY(0%);
-                                        font-family: "gotbold";
+                                        font-family: proxima-nova, sans-serif;
+                                        font-weight: bold;
 
                                         font-size: 95px;
 
@@ -752,7 +761,8 @@ body {
                                         display: inline-flex;
 
                                         transform: translateY(0%);
-                                        font-family: "gotbold";
+                                        font-family: proxima-nova, sans-serif;
+                                        font-weight: bold;
                                         letter-spacing: 0.05em;
                                         font-size: 55px;
 
@@ -885,7 +895,8 @@ body {
                                 .typing__myname {
                                     display: inline-block;
                                     transform: translateY(0%);
-                                    font-family: "gotbold";
+                                    font-family: proxima-nova, sans-serif;
+                                    font-weight: bold;
 
                                     font-size: 35px;
 
@@ -895,7 +906,7 @@ body {
                                     span {
                                         display: inline-block;
                                         transform: translateY(0%);
-                                        font-family: "gotme";
+                                        font-family: proxima-nova, sans-serif;
                                         letter-spacing: 0.05em;
                                         font-size: 35px;
 
@@ -906,7 +917,8 @@ body {
                                     span {
                                         display: inline-block;
                                         transform: translateY(0%);
-                                        font-family: "gotbold";
+                                        font-family: proxima-nova, sans-serif;
+                                        font-weight: bold;
 
                                         font-size: 55px;
                                     }
@@ -917,7 +929,8 @@ body {
                                         display: inline-flex;
 
                                         transform: translateY(0%);
-                                        font-family: "gotbold";
+                                        font-family: proxima-nova, sans-serif;
+                                        font-weight: bold;
                                         letter-spacing: 0.05em;
                                         font-size: 35px;
 
