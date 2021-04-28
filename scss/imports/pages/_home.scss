@@ -1001,6 +1001,37 @@ body {
     body {
         .wrapper__homepage {
             .section-wrapper {
+                .hero {
+                    .text_des {
+                        .container {
+                            .text__myname {
+                                .typing__myname {
+                                    font-family: Raleway, sans-serif;
+                                }
+                                &:nth-child(1) {
+                                    span {
+                                        font-family: Raleway, sans-serif;
+                                    }
+                                }
+                                &:nth-child(2) {
+                                    span {
+                                        font-family: Raleway, sans-serif;
+                                    }
+                                }
+                                &:nth-child(3) {
+                                    span {
+                                        font-family: Raleway, sans-serif;
+                                    }
+                                    .typing__myname {
+                                        margin-left: 10px;
+                                        color: $primary-cl;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .career {
                     .container {
                         .career__wrapper {
@@ -1028,8 +1059,93 @@ body {
                         .about__wrapper {
                             .right-aboutme {
                                 .right__wrapper {
+                                    .title {
+                                        .title__wrapper {
+                                            p {
+                                                font-family: Raleway, sans-serif;
+                                                font-weight: bold;
+                                                font-size: 35px;
+                                            }
+                                        }
+                                    }
+                                    .desc {
+                                        p {
+                                            font-family: Raleway, sans-serif;
+                                        }
+                                    }
+
                                     .contactme__wrapper {
                                         margin: unset;
+                                        a {
+                                            p {
+                                                font-family: Raleway, sans-serif;
+                                                font-weight: bold;
+                                                letter-spacing: 0.05em;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .projects {
+                    .container {
+                        .title {
+                            h2 {
+                                p {
+                                    font-family: Raleway, sans-serif;
+                                    font-weight: bold;
+                                    font-size: 35px;
+                                    span {
+                                        font-family: Raleway, sans-serif;
+                                        font-weight: bold;
+                                        font-size: 35px;
+                                    }
+                                }
+                            }
+                        }
+                        .showmore__wrapper {
+                            a {
+                                p {
+                                    font-family: Raleway, sans-serif;
+                                    font-weight: bold;
+                                    letter-spacing: 0.05em;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .career {
+                    .container {
+                        .title__career {
+                            h2 {
+                                p {
+                                    font-family: Raleway, sans-serif;
+                                    font-weight: bold;
+                                    font-size: 35px;
+                                    span {
+                                        font-family: Raleway, sans-serif;
+                                        font-weight: bold;
+                                        font-size: 35px;
+                                    }
+                                }
+                            }
+                        }
+                        .career__wrapper {
+                            .career__item {
+                                .dot {
+                                    &.first {
+                                        &::after {
+                                            font-family: Raleway, sans-serif;
+                                        }
+                                    }
+                                    &.end {
+                                        &::after {
+                                            font-family: Raleway, sans-serif;
+                                        }
                                     }
                                 }
                             }
