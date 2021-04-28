@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="stylesheet" href="./dest/style.min.css">
-
     <link rel="stylesheet" href="./dest/font.css">
     <title>TonDat Portfolio</title>
 </head>
@@ -358,15 +357,10 @@
                 typeSpeed: 60,
                 backSpeed: 30,
                 loop: true,
-                showCursor: true
+                // showCursor: true
             });
             if (screen.width <= 768) {
-                let tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
 
-                tl.from("#create__myname", { x: '-150%', duration: 0.5, stagger: 0.3, delay: 0 })
-                    .from(".typing__myname", { x: '-150%', duration: 0.5, stagger: 0.3, delay: 0 })
-
-                    ;
 
             }
             else {

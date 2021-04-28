@@ -808,11 +808,13 @@ body {
 
                             .left-aboutme {
                                 width: 100%;
+                                height: 60vh;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 .img {
-                                    width: 55%;
+                                    width: 90%;
+                                    height: 100%;
                                     display: flex;
                                     justify-content: center;
                                 }
@@ -836,13 +838,16 @@ body {
                                             p {
                                                 padding: 35px 0;
                                                 font-size: 30px;
-                                                line-height: 55px;
                                             }
                                         }
                                     }
                                     .desc {
-                                        text-align: center;
+                                        text-align: justify;
+                                        padding: 20px;
                                         p {
+                                            &:nth-child(2) {
+                                                margin-top: 15px;
+                                            }
                                             font-size: 18px;
                                         }
                                     }
@@ -973,9 +978,11 @@ body {
                         .career__wrapper {
                             .career__item {
                                 .company {
-                                    width: 40%;
-                                    left: 0%;
-                                    transform: translate(0%, -50%);
+                                    width: 80%;
+                                    // left: 0%;
+                                    // transform: translate(0%, -50%);
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
                                     .company__wrapper {
                                         .logo__company {
                                             display: none;
@@ -1041,7 +1048,7 @@ body {
                     .text_des {
                         .container {
                             .text__myname {
-                                height: 60px;
+                                height: 50px;
                                 &:nth-child(1) {
                                     span {
                                         letter-spacing: 0.01em;
