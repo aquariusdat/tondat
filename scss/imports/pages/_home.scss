@@ -126,6 +126,9 @@ body {
 
                                     color: white;
                                 }
+                                .typed-cursor {
+                                    display: none;
+                                }
                                 .typing__myname {
                                     margin-left: 10px;
                                     color: $primary-cl;
@@ -784,7 +787,7 @@ body {
 
                                         font-size: 95px;
 
-                                        color: white;
+                                        color: $primary-cl;
                                     }
                                 }
                                 &:nth-child(3) {
@@ -797,8 +800,6 @@ body {
                                         font-weight: bold;
                                         letter-spacing: 0.05em;
                                         font-size: 55px;
-
-                                        color: white;
                                     }
                                 }
                             }
@@ -854,10 +855,10 @@ body {
         .wrapper__homepage {
             .section-wrapper {
                 .aboutme {
+                    padding: 40px 0;
                     height: unset;
                     .container {
                         align-items: unset;
-                        padding: 40px 0;
                         .about__wrapper {
                             flex-direction: column;
 
@@ -876,10 +877,11 @@ body {
                             }
                             .right-aboutme {
                                 width: 100%;
-
+                                // height: 50%;
                                 .right__wrapper {
                                     display: flex;
                                     margin-left: unset;
+
                                     .title {
                                         margin-top: 50px;
                                         display: flex;
@@ -1139,7 +1141,7 @@ body {
                                 height: 80vh;
 
                                 .img {
-                                    width: 75%;
+                                    width: 100%;
                                 }
                             }
                             .right-aboutme {
@@ -1229,9 +1231,12 @@ body {
                     }
                 }
                 .aboutme {
+                    padding: unset;
+                    padding-top: 40px;
                     .container {
                         .about__wrapper {
                             .right-aboutme {
+                                height: 50%;
                                 .right__wrapper {
                                     .title {
                                         .title__wrapper {
