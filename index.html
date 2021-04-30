@@ -181,15 +181,18 @@
                                     <img src="./img/gbox.jpg" alt="">
                                 </div>
                             </div>
+
+                            <div class="icon">
+                                <div class="img">
+                                    <img src="./img/add.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="name__project">
+                                <p>GBOX STUDIO</p>
+                            </div>
+
                             <div class="project__face2 face">
-                                <div class="icon">
-                                    <div class="img">
-                                        <img src="./img/add.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="name__project">
-                                    <p>GBOX STUDIO</p>
-                                </div>
+
                             </div>
                         </div>
                         <div class="project hover-this project__wooder">
@@ -198,15 +201,18 @@
                                     <img src="./img/wooder.png" alt="">
                                 </div>
                             </div>
+
+                            <div class="icon">
+                                <div class="img">
+                                    <img src="./img/add.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="name__project">
+                                <p>WOODER FURNITURE</p>
+                            </div>
+
                             <div class="project__face2 face">
-                                <div class="icon">
-                                    <div class="img">
-                                        <img src="./img/add.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="name__project">
-                                    <p>WOODER FURNITURE</p>
-                                </div>
+
                             </div>
                         </div>
                         <div class="project hover-this">
@@ -215,15 +221,18 @@
                                     <img src="./img/furnitown.png" alt="">
                                 </div>
                             </div>
+
+                            <div class="icon">
+                                <div class="img">
+                                    <img src="./img/add.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="name__project">
+                                <p>Furnitown</p>
+                            </div>
+
                             <div class="project__face2 face">
-                                <div class="icon">
-                                    <div class="img">
-                                        <img src="./img/add.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="name__project">
-                                    <p>Furnitown</p>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -289,6 +298,20 @@
 
     <script>
         $(window).ready(() => {
+            $('.list__project .project').on('mouseenter', function (e) {
+                x = e.pageX - $(this).offset().left;
+                y = e.pageY - $(this).offset().top;
+
+                $(this).find('.project__face2').css({ top: y, left: x });
+            })
+            $('.list__project .project').on('mouseout', function (e) {
+                x = e.pageX - $(this).offset().left;
+                y = e.pageY - $(this).offset().top;
+
+                $(this).find('.project__face2').css({ top: y, left: x });
+            })
+
+
             document.querySelector('.hamburger').addEventListener('click', () => {
                 document.querySelector('.hamburger').classList.toggle("open");
                 document.querySelector('.navbar').classList.toggle("open");
