@@ -34,6 +34,13 @@
     transform-origin: 100% 100%;
     mix-blend-mode: difference;
 }
+
+@media screen and (max-width: 1024px) {
+    .cursor-custom {
+        display: none;
+    }
+}
+
 // .cursor-follow {
 //     width: 40px;
 //     height: 40px;
