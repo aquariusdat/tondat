@@ -16,7 +16,40 @@
         transform: translateY(100%);
     }
 }
-
+@keyframes animMouseBack {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(100%);
+    }
+    50% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: 1;
+        visibility: hidden;
+        transform: translateX(-100%);
+    }
+}
+@keyframes animMouseVisit {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100%);
+    }
+    50% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: 1;
+        visibility: hidden;
+        transform: translateX(100%);
+    }
+}
 .cursor-custom {
     width: 60px;
     height: 60px;

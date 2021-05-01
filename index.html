@@ -315,9 +315,9 @@
                 document.querySelector('.navbar').classList.toggle("open");
             });
 
-            document.querySelector('.project__gbox').addEventListener('click', () => {
-                window.open('https://aquariusdat.github.io/gbox/', '_blank');
-            });
+            // document.querySelector('.project__gbox').addEventListener('click', () => {
+            //     window.open('https://aquariusdat.github.io/gbox/', '_blank');
+            // });
             document.querySelector('.project__wooder').addEventListener('click', () => {
                 window.open('https://aquariusdat.github.io/cfd2__wooder/', '_blank');
             });
@@ -528,6 +528,13 @@
                     cursor.classList.remove('hover-link');
                 })
             })
+
+
+            // project gbox
+            let projectgbox = document.querySelector('.project__gbox').addEventListener('click', () => {
+                window.open('/gbox.html', '_target');
+            })
+
         });
 
     </script>

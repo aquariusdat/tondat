@@ -72,7 +72,14 @@
             </div>
         </nav>
         <header class="header__area">
-            <div class="header__wrapper">
+            <div class="header__wrapper sb">
+                <div class="backtoall hover-this">
+                    <div class="line__wrapper">
+                        <div class="line"></div>
+                    </div>
+                    <p>Back</p>
+                </div>
+
                 <div class="hamburger hover-this">
                     <div class="hamburger__wrapper">
                         <span></span>
@@ -100,6 +107,35 @@
                             playsinline webkit-playsinline x5-playsinline style="width: 100%; height: 100%;">
                             <source src="./video/project__gbox.mp4.mp4" type="video/mp4">
                         </video>
+                    </div>
+                </div>
+
+                <div class="content__desc">
+                    <div class="left">
+                        <div class="project__name">
+                            <div class="header">Name</div>
+                            <p>GBOX STUDIO</p>
+                        </div>
+                        <div class="project__date">
+                            <div class="header">Date</div>
+                            <p>2020</p>
+                        </div>
+                        <div class="project__frontend">
+                            <div class="header">Front-End</div>
+                            <p>Hua Ton Dat</p>
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <div class="project__visit hover-this" data-website="https://hp-backup.com/">
+                            <p>Visit Website</p>
+                            <div class="img">
+                                <img src="./img/right-arrow.svg" alt="" class="img1">
+                                <img src="./img/right-arrow.svg" alt="" class="img2">
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,8 +194,17 @@
             tl.from("#title__hidden", { y: '150%', duration: 0.5, stagger: 0.3, delay: 0 })
                 .from("#videogbox", { y: '150%', duration: 0.5, stagger: 0.3, delay: 0 });
 
+            // back to all
+            document.querySelector('.backtoall').addEventListener('click', () => {
+                window.open('/', '_target');
+            });
 
+            // visit project
+            document.querySelector('.content .project__visit').addEventListener('click', () => {
+                let website = document.querySelector('.content .project__visit').getAttribute('data-website');
 
+                window.open(`${website}`, '_blank');
+            })
         });
 
     </script>
