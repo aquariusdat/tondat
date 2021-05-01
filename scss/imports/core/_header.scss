@@ -7,76 +7,75 @@
     left: 0;
     background-color: transparent;
     z-index: 999;
-    .container {
+
+    .header__wrapper {
         width: 100%;
         height: 100%;
-        background-color: transparent;
-        .header__wrapper {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: flex-end;
-            .hamburger {
-                width: 50px;
-                overflow: hidden;
-                cursor: pointer;
-                &.open {
-                    .hamburger__wrapper {
-                        span {
-                            height: 2px;
-
-                            background-color: white;
-                            margin: 5px 0;
-                            transition: 0.5s;
-                            &:nth-child(1) {
-                                width: 100%;
-                                transform: rotateZ(135deg) translate(8px, -10px);
-                            }
-                            &:nth-child(2) {
-                                transform: translateX(120%);
-                            }
-                            &:nth-child(3) {
-                                width: 100%;
-                                transform: rotateZ(45deg) translate(-8px, -10px);
-                            }
-                        }
-                    }
-                }
+        display: flex;
+        justify-content: flex-end;
+        padding: 0px 30px;
+        .hamburger {
+            width: 50px;
+            overflow: hidden;
+            cursor: pointer;
+            &.open {
                 .hamburger__wrapper {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
-                    justify-content: center;
-                    &:hover {
-                        span {
-                            &:nth-child(1) {
-                                width: 100%;
-                            }
-                            &:nth-child(2) {
-                                width: 100%;
-                            }
-                            &:nth-child(3) {
-                                width: 100%;
-                            }
-                        }
-                    }
                     span {
                         height: 2px;
 
                         background-color: white;
+                        mix-blend-mode: difference;
                         margin: 5px 0;
-                        transition: 0.4s;
+                        transition: 0.5s;
                         &:nth-child(1) {
-                            width: 80%;
+                            width: 100%;
+                            transform: rotateZ(135deg) translate(8px, -10px);
                         }
                         &:nth-child(2) {
-                            width: 50%;
+                            transform: translateX(120%);
                         }
                         &:nth-child(3) {
-                            width: 30%;
+                            width: 100%;
+                            transform: rotateZ(45deg) translate(-8px, -10px);
                         }
+                    }
+                }
+            }
+            .hamburger__wrapper {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+                &:hover {
+                    span {
+                        &:nth-child(1) {
+                            width: 100%;
+                        }
+                        &:nth-child(2) {
+                            width: 100%;
+                        }
+                        &:nth-child(3) {
+                            width: 100%;
+                        }
+                    }
+                }
+                span {
+                    height: 2px;
+
+                    background-color: white;
+                    mix-blend-mode: difference;
+                    margin: 5px 0;
+                    transition: 0.4s;
+                    &:nth-child(1) {
+                        width: 80%;
+                    }
+                    &:nth-child(2) {
+                        width: 50%;
+                    }
+                    &:nth-child(3) {
+                        width: 30%;
                     }
                 }
             }

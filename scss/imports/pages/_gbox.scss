@@ -1,0 +1,76 @@
+body {
+    width: 100%;
+    height: 100%;
+    .wrapper__gbox {
+        width: 100%;
+        .title {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(34, 34, 34);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1 {
+                overflow: hidden;
+
+                .hidden {
+                    color: white;
+                    font-size: 55px;
+                    font-family: prophetmedium, sans-serif;
+                    span {
+                        color: $primary-cl;
+                    }
+                }
+            }
+            .line__scroll {
+                width: 5px;
+                height: 100px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                margin-bottom: 120px;
+                .line {
+                    width: 2px;
+                    height: 100%;
+                    background-color: #fff;
+                    transition: 0.4s;
+                    animation: animMouseScroll 2s ease-in-out infinite;
+                }
+            }
+        }
+        .content {
+            width: 100%;
+            height: 200vh;
+            background-color: #fff;
+            .container {
+                width: 100%;
+                height: 100%;
+                &::before {
+                    content: " ";
+                    display: table;
+                }
+                .content__video {
+                    position: relative;
+                    padding-bottom: 50%;
+                    margin-top: -280px;
+                    height: 0;
+                    overflow: hidden;
+                    .video {
+                        width: 100%;
+                        height: 100%;
+                        video {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

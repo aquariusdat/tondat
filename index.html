@@ -74,14 +74,12 @@
             </div>
         </nav>
         <header class="header__area">
-            <div class="container">
-                <div class="header__wrapper">
-                    <div class="hamburger hover-this">
-                        <div class="hamburger__wrapper">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+            <div class="header__wrapper">
+                <div class="hamburger hover-this">
+                    <div class="hamburger__wrapper">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
             </div>
@@ -323,45 +321,9 @@
             document.querySelector('.project__wooder').addEventListener('click', () => {
                 window.open('https://aquariusdat.github.io/cfd2__wooder/', '_blank');
             });
-            // TweenMax.staggerFrom(
-            //     $('.text__welcome'),
-            //     2,
-            //     { x: -250, opacity: 0, ease: "elastic.out(1,0.3)" },
-            //     0.5
-            // );
+
             let link = document.querySelectorAll('.hover-this');
             var cursor = document.querySelector(".cursor-custom");
-            // var cursorOuter = document.querySelector(".cursor-follow")
-
-
-
-            // const animateit = function (e) {
-            //     const span = this.querySelector('.hover-this span');
-            //     const { offsetX: x, offsetY: y } = e,
-            //         { offsetWidth: width, offsetHeight: height } = this,
-            //         move = 25,
-            //         xMove = x / width * (move * 2) - move,
-            //         yMove = y / height * (move * 2) - move;
-            //     $('.hover-this span').css({ 'transform': 'translate(' + xMove + ', ' + yMove + ')' });
-            //     // span.style.transform = `translate(${xMove}px,${yMove}px)`;
-            //     console.log(xMove + ' ' + yMove)
-            //     console.log()
-            //     if (e.type === 'mouseleave') {
-            //         $('.hover-this span').css({ 'transform': 'translate(0,0)' });
-            //     }
-            // };
-            // const editCursor = e => {
-            //     const { clientX: x, clientY: y } = e;
-            //     cursor.style.left = x + 'px';
-            //     cursor.style.top = y + 'px';
-
-            // }
-
-            // link.forEach(b => b.addEventListener('mousemove', animateit));
-            // link.forEach(b => b.addEventListener('mouseleave', animateit));
-
-            // window.addEventListener('mousemove', editCursor);
-
 
             $(window).mousemove(e => {
                 x = e.pageX;
@@ -369,8 +331,6 @@
 
                 cursor.style.left = x + 'px';
                 cursor.style.top = (y - scrollY) + 'px';
-                // cursorOuter.style.left = x + 'px';
-                // cursorOuter.style.top = (y - scrollY) + 'px';
 
             });
 
@@ -387,7 +347,6 @@
                         trigger: '.aboutme .left-aboutme',
                         start: '-35% center',
                         end: 'center center',
-                        // markers: true,
                     }
                 })
                 tlAboutmeLeft.from(".left-aboutme .img", { x: '-150%', duration: 1, opacity: 0 })
@@ -398,7 +357,6 @@
                         trigger: '.aboutme .right-aboutme',
                         start: '-30% center',
                         end: 'center center',
-                        // markers: true,
                     }
                 })
 
@@ -408,23 +366,12 @@
                     .from(".right-aboutme .right__wrapper .contactme", { opacity: 0, scale: 0.5, duration: 0.3 })
 
 
-                // let tlProject = gsap.timeline({
-                //     scrollTrigger: {
-                //         trigger: '.projects',
-                //         start: '-30% center',
-                //         end: 'center center',
-                //         //// markers: true,
-                //         toggleActions: 'play play none none'
-
-                //     }
-                // })
 
                 let tlProjectTitle = gsap.timeline({
                     scrollTrigger: {
                         trigger: '.projects .title',
                         start: '-250 center',
                         end: 'center center',
-                        // markers: true,
                         toggleActions: 'play play none none'
 
                     }
@@ -438,7 +385,6 @@
                         trigger: '.projects .list__project',
                         start: '-180 center',
                         end: 'center center',
-                        // markers: true,
                         toggleActions: 'play play none none'
 
                     }
@@ -455,7 +401,6 @@
                         trigger: '.career .title__career',
                         start: '-220 center',
                         end: 'center center',
-                        // markers: true,
                         toggleActions: 'play play none none'
 
                     }
@@ -468,7 +413,6 @@
                         trigger: '.career .career__wrapper',
                         start: '-50 center',
                         end: 'center center',
-                        // markers: true,
                         toggleActions: 'play play none none'
 
                     }
@@ -480,68 +424,7 @@
                     .from(".container .career__wrapper .career__item .company", { x: '-30%', opacity: 0, duration: 0.3 })
 
             }
-            // else if (screen.width <= 768) {
-            //     let tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
 
-            //     tl.from("#create__myname", { y: '180%', duration: 0.5, stagger: 0.3, delay: 0 })
-            //         .from(".typing__myname", { y: '180%', duration: 0.5, stagger: 0.3, delay: 0 })
-
-            //         ;
-
-            //     let tlAboutme = gsap.timeline({
-            //         scrollTrigger: {
-            //             trigger: '.aboutme',
-            //             start: '-30% center',
-            //             end: 'center center',
-            //             //// markers: true,
-
-
-            //         }
-            //     })
-
-            //     tlAboutme.from(".left-aboutme a", { y: '-20%', duration: 0.5 })
-            //         .from(".left-aboutme .img", { x: '-150%', duration: 0.5 }, "-= 0.5")
-            //         .from(".right-aboutme .right__wrapper .title .line__wrapper .line__about", { x: '-150%', duration: 0.7 }, "-= 0.3")
-            //         .from(".right-aboutme .right__wrapper .title .title__wrapper p", { y: '180%', duration: 0.5 })
-            //         .staggerFrom(".right-aboutme .right__wrapper .desc p", 0.5, { y: '180%' }, 0.5)
-            //         .from(".right-aboutme .right__wrapper .contactme", { opacity: 0, scale: 0.5, duration: 0.3 })
-
-
-            //     let tlProject = gsap.timeline({
-            //         scrollTrigger: {
-            //             trigger: '.projects',
-            //             start: '-30% center',
-            //             end: 'center center',
-            //             // markers: true,
-            //             toggleActions: 'play play none none'
-
-            //         }
-            //     })
-
-            //     tlProject.from(".container .title .line__wrapper .line", { x: '-100%', duration: 0.5 })
-            //         .from(".container .title h2 p", { y: '150%', duration: 0.5 })
-            //         .from(".projects .showmore", { opacity: 0, scale: 0.5, duration: 0.3 })
-            //         .staggerFrom(".projects .container .list__project .project", 0.8, { scale: 0.5, opacity: 0 }, 0.3)
-
-
-            //     let tlCareer = gsap.timeline({
-            //         scrollTrigger: {
-            //             trigger: '.career',
-            //             start: '-30% center',
-            //             end: 'center center',
-            //             // markers: true,
-            //             toggleActions: 'play play none none'
-
-            //         }
-            //     })
-
-            //     tlCareer.from(".container .title__career .line__wrapper .line", { x: '100%', duration: 0.5 })
-            //         .from(".container .title__career h2 p", { y: '150%', duration: 0.5 })
-            //         .from(".container .career__wrapper .career__item .first", { scale: 0, opacity: 0, duration: 0.5 })
-            //         .from(".container .career__wrapper .career__item .line__career", { height: '0%', duration: 0.5 })
-            //         .from(".container .career__wrapper .career__item .end", { scale: 0, opacity: 0, duration: 0.5 })
-            //         .from(".container .career__wrapper .career__item .company", { x: '-30%', opacity: 0, duration: 0.3 })
-            // }
             else {
                 let tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
 
@@ -554,7 +437,6 @@
                         trigger: '.aboutme',
                         start: '0% center',
                         end: 'center center',
-                        // markers: true,
 
 
                     }
@@ -573,7 +455,6 @@
                         trigger: '.projects',
                         start: '-30% center',
                         end: 'center center',
-                        // markers: true,
                         toggleActions: 'play play none none'
 
                     }
@@ -589,7 +470,6 @@
                         trigger: '.career',
                         start: '-30% center',
                         end: 'center center',
-                        // markers: true,
                         toggleActions: 'play play none none'
 
                     }
@@ -619,12 +499,7 @@
                 })
 
             });
-            // TweenMax.staggerFrom(
-            //     $('.projects .container .list__project .project'),
-            //     1.5,
-            //     { scale: 0, opacity: 0, ease: "elastic.out(1,0.3)" },
-            //     0.5
-            // );
+
             $('.aboutme .left-aboutme .img').tilt({
                 maxTilt: 20,
                 perspective: 1200,
@@ -648,11 +523,9 @@
             link.forEach(item => {
                 item.addEventListener('mouseover', () => {
                     cursor.classList.add('hover-link');
-                    // cursorOuter.classList.add('hover-link');
                 })
                 item.addEventListener('mouseleave', () => {
                     cursor.classList.remove('hover-link');
-                    // cursorOuter.classList.remove('hover-link');
                 })
             })
         });
