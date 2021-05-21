@@ -916,8 +916,8 @@ body {
                                         justify-content: center;
                                         padding: 25px;
                                         .contactme {
-                                            width: 200px;
-                                            padding: 15px;
+                                            // width: 200px;
+                                            // padding: 15px;
                                             font-size: 18px;
                                         }
                                     }
@@ -1239,7 +1239,8 @@ body {
                     .container {
                         .about__wrapper {
                             .right-aboutme {
-                                height: 50%;
+                                // height: 50%;
+                                height: auto;
                                 .right__wrapper {
                                     .title {
                                         .title__wrapper {
@@ -1251,6 +1252,7 @@ body {
                                         }
                                     }
                                     .desc {
+                                        height: auto;
                                         p {
                                             font-family: Raleway, sans-serif;
                                         }
@@ -1471,7 +1473,7 @@ body {
                                         }
                                     }
                                     .desc {
-                                        margin-bottom: 20px;
+                                        margin-bottom: 50px;
                                         p {
                                             &:nth-child(2) {
                                             }
@@ -1550,7 +1552,7 @@ body {
                                         }
                                     }
                                     .desc {
-                                        height: 450px;
+                                        // height: 500px;
                                         p {
                                             &:nth-child(2) {
                                             }
@@ -1558,6 +1560,8 @@ body {
                                     }
                                     .contactme__wrapper {
                                         .contactme {
+                                            // padding: 22px;
+                                            // width: 220px;
                                         }
                                     }
                                 }
