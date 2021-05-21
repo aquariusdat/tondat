@@ -55,7 +55,8 @@ body {
                 .content__video {
                     position: relative;
                     padding-bottom: 50%;
-                    margin-top: -280px;
+                    // margin-top: -280px;
+                    margin-top: -35vh;
                     height: 0;
                     overflow: hidden;
                     .video {
@@ -84,14 +85,14 @@ body {
                             font-weight: bold;
                             letter-spacing: 0.05em;
                             padding: 10px 0;
-                            text-align: center;
+                            // text-align: center;
                             color: rgb(34, 34, 34);
                         }
                         p {
                             font-size: 18px;
                             font-family: prophetmedium, sans-serif;
                             letter-spacing: 0.03em;
-                            text-align: center;
+                            // text-align: center;
                         }
                         .project__name {
                             width: 33.3333333%;
