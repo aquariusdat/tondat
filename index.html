@@ -278,7 +278,7 @@
                                 </div>
 
                             </div>
-                            <div class="dot end" data-year="NOW"></div>
+                            <div class="dot end" data-year="6/2021"></div>
                         </div>
 
                     </div>
@@ -349,7 +349,7 @@
                         end: 'center center',
                     }
                 })
-                tlAboutmeLeft.from(".left-aboutme .img", { x: '-150%', duration: 1, opacity: 0 })
+                tlAboutmeLeft.from(".left-aboutme .img", { x: '-120%', duration: 1, opacity: 0 })
 
 
                 let tlAboutmeRight = gsap.timeline({
@@ -376,7 +376,7 @@
 
                     }
                 })
-                tlProjectTitle.from(".container .title .line__wrapper .line", { x: '-100%', duration: 0.5 })
+                tlProjectTitle.from(".container .title .line__wrapper .line", { x: '-100%', duration: 0.7 })
                     .from(".container .title h2 p", { y: '150%', duration: 0.5 })
 
 
@@ -389,8 +389,8 @@
 
                     }
                 })
-                tlProjects.staggerFrom(".projects .container .list__project .project", 0.8, { scale: 0.5, opacity: 0 }, 0.3)
-                    .from(".projects .showmore", { opacity: 0, scale: 0.5, duration: 0.3 })
+                tlProjects.staggerFrom(".projects .container .list__project .project", 0.8, { scale: 0.5, opacity: 0, delay: 1 }, 0.5)
+                    .from(".projects .showmore", { opacity: 0, scale: 0.5, duration: 0.5 })
 
 
 
@@ -405,7 +405,7 @@
 
                     }
                 })
-                tlCareerTitle.from(".container .title__career .line__wrapper .line", { x: '100%', duration: 0.5 })
+                tlCareerTitle.from(".container .title__career .line__wrapper .line", { x: '100%', duration: 0.7 })
                     .from(".container .title__career h2 p", { y: '150%', duration: 0.5 })
 
                 let tlCareer = gsap.timeline({
@@ -428,8 +428,8 @@
             else {
                 let tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
 
-                tl.from("#create__myname", { y: '150%', duration: 0.5, stagger: 0.3, delay: 0 })
-                    .from(".typing__myname", { y: '150%', duration: 0.5, stagger: 0.3, delay: 0 })
+                tl.from("#create__myname", { y: '150%', duration: 0.6, stagger: 0.4, delay: 0 })
+                    .from(".typing__myname", { y: '150%', duration: 0.6, stagger: 0.4, delay: 0 })
 
                     ;
                 let tlAboutme = gsap.timeline({
@@ -442,12 +442,12 @@
                     }
                 })
 
-                tlAboutme.from(".left-aboutme a", { y: '-20%', duration: 0.5 })
-                    .from(".left-aboutme .img", { x: '-150%', duration: 0.5, opacity: 0 }, "-= 0.5")
-                    .from(".right-aboutme .right__wrapper .title .line__wrapper .line__about", { x: '-100%', duration: 0.7 }, "-= 0.3")
+                tlAboutme.from(".left-aboutme a", { y: '-20%', duration: 0.7 })
+                    .from(".left-aboutme .img", { x: '-100%', duration: 1, opacity: 0 }, "-= 0.5")
+                    .from(".right-aboutme .right__wrapper .title .line__wrapper .line__about", { x: '-100%', duration: 0.7, delay: 0.7 }, "-= 0.3")
                     .from(".right-aboutme .right__wrapper .title .title__wrapper p", { y: '200%', duration: 0.5 })
                     .staggerFrom(".right-aboutme .right__wrapper .desc p", 0.5, { y: '200%' }, 0.5)
-                    .from(".right-aboutme .right__wrapper .contactme", { opacity: 0, scale: 0.5, duration: 0.3 })
+                    .from(".right-aboutme .right__wrapper .contactme", { opacity: 0, scale: 0.5, duration: 0.4 })
 
 
                 let tlProject = gsap.timeline({
