@@ -255,10 +255,77 @@
                         </div>
 
                     </div>
-                    <div class="career__wrapper">
-                        <div class="career__item">
-                            <div class="line__career">
 
+                    <div class="career__wrapper">
+                        <div class="line__career">
+
+                        </div>
+                        <div class="career__item career__item-left">
+                            <div class="dot first" data-year="8/2020"></div>
+                            <div class="company hover-this" data-titl data-link="https://hp-backup.com/">
+                                <div class="company__wrapper">
+                                    <div class="logo__company">
+                                        <div class="img">
+                                            <img src="./img/logo_hpb.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="name">
+                                        <p>HP-Backup Solution Ltd.</p>
+                                    </div>
+                                    <div class="desc">
+                                        <p>I work in this company as a <span>.NET Developer</span></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- <div class="dot end" data-year="6/2021"></div> -->
+                        </div>
+                        <div class="career__item career__item-right">
+                            <div class="dot first" data-year="6/2021"></div>
+                            <div class="company hover-this" data-titl data-link="https://ssaudit.com/">
+                                <div class="company__wrapper">
+                                    <div class="logo__company">
+                                        <div class="img">
+                                            <img src="./img/ss-CI.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="name">
+                                        <p>S&S Auditing and Consulting</p>
+                                    </div>
+                                    <div class="desc">
+                                        <p>I work in this company as a <span>.NET Developer</span></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- <div class="dot end" data-year="12/2021"></div> -->
+                        </div>
+                        <div class="career__item career__item-left">
+                            <div class="dot first" data-year="12/2021"></div>
+                            <div class="company hover-this" data-titl data-link="https://mwg.vn/">
+                                <div class="company__wrapper">
+                                    <div class="logo__company">
+                                        <div class="img">
+                                            <img src="./img/logo_mwg.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="name">
+                                        <p>MWG</p>
+                                    </div>
+                                    <div class="desc">
+                                        <p>I work in this company as a <span>.NET Developer</span></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="dot end" data-year="NOW"></div>
+                        </div>
+
+                        <!-- <div class="career__item">
+                            <div class="line__career">
                             </div>
                             <div class="dot first" data-year="8/2020"></div>
                             <div class="company hover-this" data-titl data-link="https://hp-backup.com/">
@@ -279,6 +346,74 @@
 
                             </div>
                             <div class="dot end" data-year="6/2021"></div>
+                        </div>
+                        <div class="career__item">
+                            <div class="line__career">
+                            </div>
+                            <div class="dot first" data-year="8/2020"></div>
+                            <div class="company hover-this" data-titl data-link="https://hp-backup.com/">
+                                <div class="company__wrapper">
+                                    <div class="logo__company">
+                                        <div class="img">
+                                            <img src="./img/logo_hpb.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="name">
+                                        <p>HP-Backup Solution Ltd.</p>
+                                    </div>
+                                    <div class="desc">
+                                        <p>I work in this company as a <span>.NET Developer</span></p>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                            <div class="dot end" data-year="6/2021"></div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills">
+                <div class="container">
+                    <div class="title__skills">
+                        <div class="line__wrapper">
+                            <div class="line"></div>
+                        </div>
+                        <h2>
+                            <p><span>My</span> skills</p>
+                        </h2>
+                    </div>
+                    <div class="skills__wrapper">
+                        <div class="skill hover-this">
+                            <div class="img">
+                                <img src="./img/csharp.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skill hover-this">
+                            <div class="img">
+                                <img src="./img/netcore.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skill hover-this">
+                            <div class="img">
+                                <img src="./img/sass.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skill hover-this">
+                            <div class="img">
+                                <img src="./img/html5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skill hover-this">
+                            <div class="img">
+                                <img src="./img/css-3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skill hover-this">
+                            <div class="img">
+                                <img src="./img/js-03.png" alt="">
+                            </div>
                         </div>
 
                     </div>
@@ -465,6 +600,21 @@
                     .from(".projects .showmore", { opacity: 0, scale: 0.5, duration: 0.3 })
                     .staggerFrom(".projects .container .list__project .project", 1.3, { scale: 0, opacity: 0, ease: "elastic.out(0.7,0.4)" }, 0.3)
 
+                let tlSkill = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.skills',
+                        start: '-30% center',
+                        end: 'center center',
+                        toggleActions: 'play play none none'
+
+                    }
+                })
+
+                tlSkill.from(".container .title__skills .line__wrapper .line", { x: '-100%', duration: 0.5 })
+                    .from(".container .title__skills h2 p", { x: '-100%', duration: 0.5 })
+                    .staggerFrom(".skills .container .skills__wrapper .skill", 1.3, { scale: 0, opacity: 0, ease: "elastic.out(0.7,0.4)" }, 0.3)
+
+
                 let tlCareer = gsap.timeline({
                     scrollTrigger: {
                         trigger: '.career',
@@ -478,17 +628,11 @@
                 tlCareer.from(".container .title__career .line__wrapper .line", { x: '100%', duration: 0.5 })
                     .from(".container .title__career h2 p", { x: '100%', duration: 0.5 })
                     .from(".container .career__wrapper .career__item .first", { scale: 0, opacity: 0, duration: 0.5 })
-                    .from(".container .career__wrapper .career__item .line__career", { height: '0%', duration: 0.5 })
+                    .from(".container .career__wrapper .line__career", { height: '0%', duration: 0.5 })
                     .from(".container .career__wrapper .career__item .end", { scale: 0, opacity: 0, duration: 0.5 })
-                    .from(".container .career__wrapper .career__item .company", { x: '-30%', opacity: 0, duration: 0.3 })
-
+                    .from(".container .career__wrapper .career__item-left .company", { x: '-30%', opacity: 0, duration: 0.3 })
+                    .from(".container .career__wrapper .career__item-right .company", { x: '130%', opacity: 0, duration: 0.3 })
             }
-
-
-
-
-
-
 
             const company = document.querySelectorAll('.career .company');
             company.forEach(item => {
@@ -514,6 +658,16 @@
                 perspective: 1200,
                 easing: "cubic-bezier(.03,.98,.52,.99)",
                 scale: 1.02,
+                speed: 1500,
+                transition: true,
+                reset: true,
+            });
+
+            $('.skills .skill .img').tilt({
+                maxTilt: 20,
+                perspective: 800,
+                easing: "cubic-bezier(.03,.98,.52,.99)",
+                scale: 1,
                 speed: 1500,
                 transition: true,
                 reset: true,
