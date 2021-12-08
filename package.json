@@ -23,7 +23,7 @@
   "dependencies": {
     "grunt-sass": "^3.1.0",
     "gsap": "^3.6.1",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "particles.js": "^2.0.0",
     "typed.js": "^2.0.12"
   }
