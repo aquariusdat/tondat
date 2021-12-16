@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="./dest/style.min.css">
+    <link rel="stylesheet" href="./dest/font.css">
+    <title>TonDat Portfolio</title>
+</head>
+
+<body>
+    <div id="particles-js" style="display:none"></div>
+    <div class="cursor-custom">
+
+    </div>
+    <div class="wrapper__gbox">
+        <nav class="navbar">
+            <div class="navbar__wrapper">
+                <ul class="nav__list">
+                    <li class="nav__item" data-text="Home"><a href="" class="nav__link hover-this">
+                            <p>Home</p>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li class="nav__item" data-text="My Projects"><a href="" class="nav__link hover-this">
+                            <p>My Projects</p>
+                            <p>My
+                                Projects</p>
+                        </a></li>
+                    <li class="nav__item" data-text="My CV"><a href="" class="nav__link hover-this">
+                            <p>My CV</p>
+                            <p>My
+                                CV</p>
+                        </a></li>
+                    <li class="nav__item" data-text="My Contact"><a href="" class="nav__link hover-this">
+                            <p>My Contact</p>
+                            <p>My
+                                Contact</p>
+                        </a></li>
+                </ul>
+                <div class="social-media">
+                    <div class="social__wrapper">
+                        <a class="social facebook hover-this">
+                            <div class="img">
+                                <img src="./img/facebook.svg" alt="">
+                            </div>
+                            <!-- <div class="hoverme">
+                                <p>My facebook</p>
+                            </div> -->
+                        </a>
+
+                        <a class="social instagram hover-this" data-context="My">
+                            <div class="img">
+                                <img src="./img/instagram.svg" alt="">
+                            </div>
+                            <!-- <div class="hoverme">
+                                <p>My instagram</p>
+                            </div> -->
+                        </a>
+                        <a class="social github hover-this">
+                            <div class="img">
+                                <img src="./img/github-sign.svg" alt="">
+                            </div>
+                            <!-- <div class="hoverme">
+                                <p>My github</p>
+                            </div> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header class="header__area">
+            <div class="header__wrapper sb">
+                <div class="backtoall hover-this">
+                    <div class="line__wrapper">
+                        <div class="line"></div>
+                    </div>
+                    <p>Back</p>
+                </div>
+
+                <div class="hamburger hover-this">
+                    <div class="hamburger__wrapper">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="title">
+            <h1 class="hover-this title__name">
+                <div class="hidden" id="title__hidden">TODA <span>SNEAKER</span> SHOP</div>
+            </h1>
+            <div class="line__scroll">
+                <div class="line">
+
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="content__video">
+                    <div class="video">
+                        <video src="./video/project__gbox.mp4.mp4" id="videogbox" preload="auto" autoplay controls loop
+                            playsinline webkit-playsinline x5-playsinline style="width: 100%; height: 100%;">
+                            <source src="./video/project__gbox.mp4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="content__desc">
+                    <div class="left">
+                        <div class="project__name">
+                            <div class="header">Name</div>
+                            <p>TODA SNEAKER SHOP</p>
+                        </div>
+                        <div class="project__date">
+                            <div class="header">Date</div>
+                            <p>2021</p>
+                        </div>
+                        <div class="project__frontend">
+                            <div class="header">Front-End</div>
+                            <p>Hua Ton Dat</p>
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <div class="project__visit hover-this" data-website="https://todasneaker.tondat.dev/">
+                            <p>Visit Website</p>
+                            <div class="img">
+                                <img src="./img/right-arrow.svg" alt="" class="img1">
+                                <img src="./img/right-arrow.svg" alt="" class="img2">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__img">
+                    <div class="image">
+                        <div class="image__project">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="./dest/jsmain.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+    <script>
+        $(window).ready(() => {
+            document.querySelector('.hamburger').addEventListener('click', () => {
+                document.querySelector('.hamburger').classList.toggle("open");
+                document.querySelector('.navbar').classList.toggle("open");
+            });
+
+
+            let link = document.querySelectorAll('.hover-this');
+            var cursor = document.querySelector(".cursor-custom");
+
+            $(window).mousemove(e => {
+                x = e.pageX;
+                y = e.pageY;
+
+                cursor.style.left = x + 'px';
+                cursor.style.top = (y - scrollY) + 'px';
+
+            });
+
+            // Cursor hover
+            link.forEach(item => {
+                item.addEventListener('mouseover', () => {
+                    cursor.classList.add('hover-link');
+                })
+                item.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('hover-link');
+                })
+            })
+
+
+            $('.wrapper__gbox .title__name').tilt({
+                maxTilt: 25,
+                perspective: 1200,
+                easing: "cubic-bezier(.03,.98,.52,.99)",
+                scale: 1,
+                speed: 1500,
+                transition: true,
+                reset: true,
+            });
+
+
+
+            let tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
+
+            tl.from("#title__hidden", { y: '150%', duration: 0.5, stagger: 0.3, delay: 0 })
+                .from("#videogbox", { y: '150%', duration: 0.5, stagger: 0.3, delay: 0 });
+
+            // back to all
+            document.querySelector('.backtoall').addEventListener('click', () => {
+                window.location.replace("index.html")
+            });
+
+            // visit project
+            document.querySelector('.content .project__visit').addEventListener('click', () => {
+                let website = document.querySelector('.content .project__visit').getAttribute('data-website');
+
+                window.open(`${website}`, '_blank');
+            })
+        });
+
+    </script>
+</body>
+
+</html>
